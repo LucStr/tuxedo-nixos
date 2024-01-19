@@ -14,7 +14,6 @@ let
   # version used by nixpkgs, leading to errors such as:
   #   > npm ERR! code ENOTCACHED
   #   > npm ERR! request to https://registry.npmjs.org/node-ble failed: cache mode is 'only-if-cached' but no cached response is available.
-  nodejs = nodejs;
 
   baseNodePackages = (import ./node-composition.nix {
     inherit pkgs nodejs;
