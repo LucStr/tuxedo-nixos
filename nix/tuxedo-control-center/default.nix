@@ -1,6 +1,6 @@
 { pkgs, lib, stdenv, copyDesktopItems
 , python3, udev
-, makeWrapper, nodejs-20_x, electron_13, fetchFromGitHub
+, makeWrapper, nodejs, electron_13, fetchFromGitHub
 }:
 
 let
@@ -14,7 +14,7 @@ let
   # version used by nixpkgs, leading to errors such as:
   #   > npm ERR! code ENOTCACHED
   #   > npm ERR! request to https://registry.npmjs.org/node-ble failed: cache mode is 'only-if-cached' but no cached response is available.
-  nodejs = nodejs-20_x;
+  nodejs = nodejs;
 
   baseNodePackages = (import ./node-composition.nix {
     inherit pkgs nodejs;
