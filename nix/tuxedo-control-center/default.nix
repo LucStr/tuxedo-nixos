@@ -7,7 +7,7 @@ let
   ## Update Instructions
   #
   # see ./README.md
-  version = "2.1.4";
+  version = "2.1.5";
 
   # keep in sync with update.sh!
   # otherwise the format of package.json does not mach the format used by the 
